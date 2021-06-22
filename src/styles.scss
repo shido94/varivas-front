@@ -1,1 +1,188 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import 'node_modules/angular2-toaster/toaster';
+
+
+body, html {
+    background: #fbf9f4 !important;
+}
+
+body, input, textarea {
+    color: #333 !important;
+    font-size: 17px !important;
+    line-height: 1.6470588235 !important;
+}
+
+.error {
+  color: red !important;
+}
+
+.menu-footer-container li, body, h1, input, textarea {
+    font-family: Karla,sans-serif !important;
+}
+
+.container a{
+    color: black;
+}
+
+.is-active {
+    color: red !important;
+}
+
+.blogs {
+    margin: 90px 0 30px 0;
+}
+
+.card-border {
+    border: #fbf9f4 !important;;
+}
+
+
+hr {
+    border-color: #f44336!important;
+}
+
+
+
+:root {
+  --dark-blue: #478ba2;
+  --light-blue: #b9d4db;
+  --dark-orange: #e9765b;
+  --light-orange: #f2a490;
+  --dark-pink: #de5b6d;
+  --green: #18a558;
+  --ivory: #f9f7f4;
+  --black: #202020;
+  --dark-gray: #474747;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 9px "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+/* NAVBAR STYLE */
+a,
+.logo-container a,
+.right-nav a {
+  color: var(--black);
+  text-decoration: none !important;
+}
+
+a:hover,
+.logo-container a:hover,
+.right-nav a:hover {
+  color: var(--dark-gray) !important;
+  text-decoration: none;
+}
+
+.nav-container {
+  margin: auto;
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: center;
+  color: var(--black);
+}
+
+.search-container {
+  width: 70%;
+}
+.right-nav {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto !important;
+  padding-left: auto !important;
+}
+
+.right-nav ul li {
+  display: inline;
+  padding: 0.3em;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transform: translateX(3em);
+}
+.logo-container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo-title {
+  font-weight: 600;
+  margin: 4px 1px;
+}
+
+.logo-img {
+  max-height: 3em;
+}
+
+/* CATEGORIES NAVBAR */
+
+.navbar-custom {
+  background-color: var(--dark-blue);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text,
+.navbar-custom .navbar-nav .nav-link {
+  color: var(--ivory);
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item.active .nav-link {
+  color: var(--light-blue) !important;
+}
+
+/* SEARCH BOX */
+
+
+
+.button-style-danger:hover {
+  background-color: var(--light-orange);
+  color: var(--black) !important;
+}
+
+.price {
+  color: var(--dark-pink);
+  font-weight: bold;
+  font-size: 20px;
+  margin: 1px 0px 6px 0px;
+}
+
+.product-index-box {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.product-index-box .btn {
+  width: 90%;
+  margin: 0.3em auto;
+}
+
+.product-index-box {
+  object-fit: cover;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+}

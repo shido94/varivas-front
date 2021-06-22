@@ -1,0 +1,47 @@
+<div id="page-container">
+  <div id="content-wrap">
+    <div class="row nav-container mx-auto">
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12 logo-container">
+        <a href="/">
+          <img class="logo-img img-fluid" src="./assets/images/shop-icon.png" alt="logo" />
+          <h4 class="logo-title">Varivas</h4>
+        </a>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12 right-nav">
+        <ul>
+          <li>
+            <a href="/shopping-cart">
+              <i class="fas fa-shopping-cart"></i>
+              <!-- <% if(session.cart) { %>
+                <span class="badge badge-pill badge-info">
+                  <%= session.cart.totalQty %>
+                </span>
+                <% } else { %> -->
+              <span class="badge badge-pill badge-info">0</span>
+              <!-- <% } %> -->
+            </a>
+          </li>
+            <li *ngIf="user">
+              <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+                <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">
+                  Welcome {{user.name}}
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownManual">
+                  <a href="javascript:void(0)" ngbDropdownItem href="user/post">My Post</a>
+                  <a ngbDropdownItem href="/post/create">Create Post</a>
+                  <a href="javascript:void(0)" ngbDropdownItem (click)="logout()">Log Out</a>
+                </div>
+              </div>
+            </li>
+          <li *ngIf="!user">
+            <a href="/user/signin"> Sign In</a>
+          </li>
+          <!-- <% }%> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
